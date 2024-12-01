@@ -8,15 +8,12 @@ class Usuario:
         self.tipo_usuario = tipo_usuario
 
     def login(self):
-        # Aquí implementarías la autenticación, en este caso solo un placeholder
         print(f"Iniciando sesión para {self.nombre} ({self.tipo_usuario})")
     
     def logout(self):
-        # Placeholder para logout
         print(f"Cerrando sesión de {self.nombre}")
     
     def validar_datos(self):
-        # Validación de datos del usuario (como el correo electrónico)
         if '@' not in self.email:
             print("Correo electrónico no válido")
             return False
