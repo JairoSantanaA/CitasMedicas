@@ -18,3 +18,9 @@ class Usuario:
             print("Correo electrónico no válido")
             return False
         return True
+    
+    def pedir_reserva(self, medico, fecha, hora):
+        if not self.validar_datos():
+            return "No se puede realizar la reserva, datos no válidos."
+        
+        return medico.hacer_reserva(fecha, hora, self.nombre)
