@@ -1,4 +1,4 @@
-class Doctor:
+class Medico:
     def __init__(self, id, nombre, telefono, especialidad, correo):
         self.id = id
         self.nombre = nombre
