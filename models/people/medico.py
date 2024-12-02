@@ -14,7 +14,7 @@ class Medico:
     def hacer_reserva(self, fecha, hora, paciente):
         for horario in self.horarios:
             if horario.dia == fecha and horario.hora_inicio <= hora <= horario.hora_fin:
-                reserva = Reserva(self, fecha, hora, paciente)
+                reserva = reservas(self, fecha, hora, paciente)
                 self.reservas.append(reserva)
                 return f"Reserva hecha para {paciente} con {self.nombre} el {fecha} a las {hora}."
         return "Horario no disponible."
