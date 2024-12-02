@@ -13,11 +13,11 @@ class Usuario:
     def logout(self):
         print(f"Cerrando sesión de {self.nombre}")
     
-    def validar_datos(self):
-        if '@' not in self.email:
-            print("Correo electrónico no válido")
-            return False
-        return True
+    def validar_datos(self): 
+        if '@' not in self.email: 
+            print("Correo electrónico no válido") 
+            return False 
+        return True 
     
     def pedir_reserva(self, medico, fecha, hora):
         if not self.validar_datos():
